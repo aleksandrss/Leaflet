@@ -374,7 +374,7 @@ L.Map = L.Class.extend({
 	},
 
 	getScaleZoom: function (scale) {
-		return this._zoom + (Math.log(scale) / Math.LN2);
+		return Math.round(this._zoom + (Math.log(scale) / Math.LN2));
 	},
 
 
